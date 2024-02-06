@@ -354,7 +354,7 @@ nav {
     height: 50px;
     left: 570px;
     top: 30px; color: white;
-    position: relative;
+    position: fixed;
     top: 40px;
 }
 
