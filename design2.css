@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .flex {
     background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6raYLjyH11Umgs86wx3lNF/b54297568e758730aa65f2a1c92258c7/GettyImages-1211395020.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=);
     width: 100%;
@@ -5,6 +11,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .testo {
@@ -23,11 +32,14 @@ nav {
     align-items: center;
 }
 
-.button :hover {
-    width: 110px;
-    height: 30px;
-    color: crimson;
-    border-radius: 10px;
+.button0 {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5%;
+    color: white;
 }
 
 .flex2 {
@@ -251,75 +263,71 @@ nav {
     bottom: 20px;
 }
 
-.flex5 {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
+.flex5 { 
+    background-color: blue;    
 }
 
 .flex6 {
     background-color: blue;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.titolo2 {
+    padding-top: 10px;
+    font-size: larger;    
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
     display: flex;
-    justify-content: space-around; 
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 200px;
 }
 
-.child6 {
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-    text-align: center;
-    margin: 10px;
-    border-radius: 30px 30px;
-    position: relative;
+.partesup {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: greenyellow;
+    padding-right: 0px;
+    padding-top: 100px;
+    gap: 40px;
+    border-radius: 10%;
 }
 
-.child7 {
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-    text-align: center;
-    margin: 10px;
-    border-radius: 30px 30px;
-    position: relative;
+.partesup1 {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: greenyellow;
+    gap: 40px;
+    padding-top: 100px;  
+    border-radius: 10%;
 }
 
-.child8 {
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-    text-align: center;
-    margin: 10px;
-    border-radius: 30px 30px;
-    position: relative;
+.partesup2 {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: greenyellow;
+    gap: 40px;
+    padding-top: 100px;  
+    border-radius: 10%;
 }
 
-.testo7 {
-    align-self: center;
-    position: relative;   
+.imgz {
+    border-radius: 10%;
+    height: 100px;
+    width: 100px;
+}
+
+.parteinf {
     font-size: small;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
-}
-
-.testo8 {
-    align-self: center;
-    position: relative;   
-    font-size: small;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-}
-
-.testo9 {
-    align-self: center;
-    position: relative;    
-    font-size: small;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-}
-
-.sottotitolo1 {
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
+    justify-content: center;
+    font-size: medium;
 }
 
 .flex7 {
@@ -329,37 +337,39 @@ nav {
     align-items: center;
     height: 500px;
     width: 100%;
+    position: relative;
 }
 
 .elementi {
-    height: 80%;
+    height: 50%;
     width: 40%;
     display: flex;
     position: relative;
 }
 
 .img11 {
-    height: 70%;
-    width: 65%;
+    height: 300px;
+    width: 75%;
     border-radius: 0% 25% 0% 25%;
     position: relative;
     left: 20%;
-    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
-.buttologo {
+.buttonlogo {
     border-radius: 100%;
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 570px;
-    top: 30px; color: white;
-    position: fixed;
-    top: 40px;
+    left: 95px;
+    top: 150px; 
+    color: black;
 }
 
 .testo10 {
     display: inline;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .am-btn {
@@ -377,9 +387,43 @@ nav {
     color: white;
 }
 
+.am-btn {
+    transition: 1s;
+    display: inline;
+}
+
+.am-btn button:hover{
+    transform: matrix(2);
+    transition-duration: 2s;
+    background-color: crimson;
+}
+
+.am-btn button:active {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+.button0 {
+    transition: 1s;
+    display: inline;
+}
+
+.button0 button:hover{
+    transform: matrix(2);
+    transition-duration: 2s;
+    background-color: crimson;
+}
+
+.button0 button:active {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
 @media screen and (max-width: 650px) {
     body {
         background-color: crimson;
     }
 }
+
+
 
